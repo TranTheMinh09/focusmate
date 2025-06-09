@@ -1,0 +1,74 @@
+name: focusmate
+description: "Ứng dụng giúp bạn tập trung hơn vào công việc của mình."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Lưu trữ offline
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Hỗ trợ lấy đường dẫn thư mục cho Hive
+  path_provider: ^2.1.1
+
+  # Thư viện gửi thông báo
+  flutter_local_notifications: ^16.0.0
+
+  # Thư viện hỗ trợ timezone
+  timezone: ^0.9.4
+
+  # Thư viện định dạng ngày giờ
+  intl: ^0.18.1
+
+  # Thư viện hỗ trợ quyền truy cập
+  permission_handler: ^11.0.1
+
+  # Thư viện hỗ trợ vuốt để xóa
+  flutter_slidable: ^3.0.0
+
+  # Thư viện hỗ trợ tìm kiếm
+  flutter_search_bar: ^3.0.0
+
+  # Thư viện hỗ trợ dạng lưới
+  flutter_staggered_grid_view: ^0.6.2
+
+  # Giao diện đẹp hơn
+  cupertino_icons: ^1.0.2
+
+  # Thư viện hỗ trợ kéo thả
+  reorderables: ^0.4.2
+
+  # Thư viện hỗ trợ tự động điều chỉnh kích thước chữ
+  auto_size_text: ^3.0.0
+
+  # Thư viện hỗ trợ rung điện thoại
+  vibration: ^2.0.0
+
+  workmanager: ^0.5.0 # Thư viện hỗ trợ chạy background task
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Tạo file adapter tự động cho Hive
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.6
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:  # ✅ Đúng cú pháp cấu hình icon
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon.png"
+
+flutter:
+  uses-material-design: true
